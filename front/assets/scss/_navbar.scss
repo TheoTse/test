@@ -1,0 +1,28 @@
+/*
+Copyright (C) 2017-2020 Haute Ecole Robert Schuman.
+
+This file is part of hers-stagekine.
+
+  hers-stagekine is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or (at your
+  option) any later version.
+
+  hers-stagekine is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public
+  License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with hers-stagekine.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.navbar {
+    box-shadow: 0px 2px 3px 0px $nav-border;
+
+    li {
+        margin-right: .8em;
+        a.nav-link:hover { color: $primary!important; }
+    }
+
+}

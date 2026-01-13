@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Signika';
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local('Signika Regular'),
+		local('Signika-Regular'),
+		/* from https://fonts.gstatic.com/s/signika/v8/VXdqIs7WDCt-XY_CZ2hksw.eot */
+		url('Signika.eot?#iefix') format('embedded-opentype'),
+		/* from https://fonts.gstatic.com/s/signika/v8/_M5k9_BZTkfaM2dnN0vNGw.woff */
+		url('Signika.woff') format('woff'),
+		/* from https://fonts.gstatic.com/s/signika/v8/q41y_9MUP_N8ipOH4ORRvw.woff2 */
+		url('Signika.woff2') format('woff2'),
+		/* from https://fonts.gstatic.com/l/font?kit=5tVTlpEL90Fq0tycczbnOQ&skey=2df7b3f7f6d8a32a&v=v8#Signika */
+		url('Signika.svg#Signika') format('svg'),
+		/* from https://fonts.gstatic.com/s/signika/v8/ejLRhBEorqjLDaF8s-xuTQ.ttf */
+		url('Signika.ttf') format('truetype');
+}

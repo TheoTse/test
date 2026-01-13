@@ -1,0 +1,71 @@
+/*
+Copyright (C) 2017-2020 Haute Ecole Robert Schuman.
+
+This file is part of hers-stagekine.
+
+  hers-stagekine is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or (at your
+  option) any later version.
+
+  hers-stagekine is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public
+  License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with hers-stagekine.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.o-hidden { overflow: hidden; }
+@each $w in 0 25 50 75 100 {
+    @each $bp in sm md lg {
+        @include media-breakpoint-up($bp) {
+            .w-#{$bp}-#{$w} {
+                width: #{$w + '%'};
+            }
+        }
+    }
+}
+
+@for $i from 1 through 100 {
+    .fs-#{$i} {
+        font-size: #{$i/10 + 'em'};
+    }
+
+    @each $bp in sm md lg {
+        @include media-breakpoint-up($bp) {
+            .fs-#{$bp}-#{$i} {
+                font-size: #{$i/10 + 'em'};
+            }
+        }
+    }
+}
+
+.h2-title-ctn {
+    background-color: $h2-title-bg;
+    font-family: "Signika";
+}
+
+.rich-text .responsive-object {
+    padding-bottom: 1em!important;
+}
+
+.font-normal {
+    font-family: $font-family-sans-serif;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+a.showangle[aria-expanded=false]::after {
+    @extend .fa;
+    content: ' ' + $fa-var-angle-right;
+}
+
+a.showangle[aria-expanded=true]::after {
+    @extend .fa;
+    content: ' ' + $fa-var-angle-down;
+}

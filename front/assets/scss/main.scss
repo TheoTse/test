@@ -1,0 +1,50 @@
+/*
+Copyright (C) 2017-2020 Haute Ecole Robert Schuman.
+
+This file is part of hers-stagekine.
+
+  hers-stagekine is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or (at your
+  option) any later version.
+
+  hers-stagekine is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public
+  License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with hers-stagekine.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-select/sass/bootstrap-select";
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import 'mixins';
+
+html, body { height: 100%; }
+body {
+    padding-top: 3.5rem;
+    background: $body-bg;
+}
+
+.navbar img {
+    height: 2rem;
+}
+
+@media (max-width: 286px) {
+    .navbar img {
+        height: 1.5rem!important;
+    }
+}
+@include font-face(Signika, "../fonts/signika/Signika", normal, normal);
+
+@import "generics";
+@import "page_connexion";
+@import "navbar";
+@import "page40x";
+@import '~tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min'

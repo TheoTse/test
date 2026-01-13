@@ -1,0 +1,35 @@
+body.page403,
+body.page404 {
+    .bg-img, .bg-dark {
+        position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: -1;
+    }
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 4rem;
+        @include media-breakpoint-down(sm) {
+            font-size: 10vw;
+        }
+    }
+}
+
+body.page403 {
+    .bg-img { background: url('../img/403bg.jpg') no-repeat center center / cover fixed; }
+    .bg-dark {
+        background: rgba(#000000, 1);
+        opacity: 0.6;
+    }
+}
+
+body.page404 {
+
+    .bg-img { background: url('../img/404bg.jpg') no-repeat center center / cover fixed; }
+    .bg-dark {
+        background: #000000;
+        opacity: 0.5;
+    }
+}
